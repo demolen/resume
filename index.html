@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milad Khodabandeh - Technical Sound Designer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        
+
+        header {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .header-section {
+            padding: 0 20px;
+            font-weight: 300;
+            font-size: 18px;
+        }
+        
+        .header-section:not(:last-child) {
+            border-right: 1px solid #ddd;
+        }
+        
+        .header-section:first-child {
+            padding-left: 0;
+        }
+        
+        .profile-image {
+            align-self: left;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        .main-content {
+            display: flex;
+        }
+        
+        .sidebar {
+            width: 25%;
+            padding-right: 30px;
+        }
+        
+        .content {
+            width: 75%;
+            border-left: 1px solid #ddd;
+            padding-left: 30px;
+        }
+        
+        h1, h2, h3 {
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 24px;
+        }
+        
+        h2 {
+            font-size: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        
+        .sidebar h3 {
+            color: #777;
+            font-size: 18px;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin-bottom: 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        li.numbered {
+            margin-bottom: 15px;
+        }
+        
+        li.numbered::before {
+            content: attr(data-number) ".";
+            color: #999;
+            margin-right: 5px;
+            font-weight: 300;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .buy-button {
+            display: inline-block;
+            color: #666;
+            text-decoration: none;
+            margin-top: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .buy-button:hover {
+            color: #333;
+            border-color: #999;
+        }
+        
+        .book-image {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .experience-item {
+            margin-bottom: 25px;
+        }
+        
+        .experience-title {
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        
+        .experience-date {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
+        }
+        
+        .skill-category {
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .skill-list {
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .sidebar, .content {
+                width: 100%;
+                padding: 0;
+            }
+            
+            .content {
+                border-left: none;
+                margin-top: 30px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-section">Milad Khodabandeh</div>
+        <div class="header-section">Technical Sound Designer</div>
+    </header>
+    
+    <div class="main-content">
+        <div class="sidebar">
+            <div class="section">
+                            <div>
+                <img class="profile-image" src="./photo.jpeg" alt="Profile Picture">
+            </div>
+                <h3>Contact</h3>
+                <ul>
+<li>
+  <a href="mailto:xodabandeh@gmail.com"
+     style="cursor: pointer; color: #555; text-decoration: none;"
+     onmouseover="this.style.textDecoration='underline';"
+     onmouseout="this.style.textDecoration='none';">
+    xodabandeh@gmail.com
+  </a>
+</li>
+<li>015789216714</li>
+<li>
+  <a href="https://github.com/demolen"
+     style="cursor: pointer; color: #555; text-decoration: none;"
+     onmouseover="this.style.textDecoration='underline';"
+     onmouseout="this.style.textDecoration='none';">
+    github.com/demolen
+  </a>
+</li>
+<li>Wuppertal, Germany</li>
+
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h3>Languages</h3>
+                <ul>
+                    <li>English (Fluent)</li>
+                    <li>German (Fluent - C2/DSH3)</li>
+                    <li>Persian (Native)</li>
+                    <li>Lori (Native)</li>
+                    <li>Arabic (Basic)</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h3>Personal</h3>
+                <ul>
+                    <li>DOB: 07.03.1990</li>
+                    <li>Pronouns: He/Him</li>
+                    <li>Open to travel across Europe</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>Profile</h2>
+                <p>
+                   Programmer and Artist with a passion for Art, sound and technology and novel Design. Interested in the overlap between human
+                   experience through technlogical augementation and non intrusive and ethical software.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div>
+                        <div class="skill-category">Audio & Interactive Media</div>
+                        <div class="skill-list">XAudio2, HRTF, TouchDesigner, Ableton Live, Proccessing</div>
+                    </div>
+                    <div>
+                        <div class="skill-category">Programming</div>
+                        <div class="skill-list">C, C++, C#, JavaScript, HTML/CSS, PowerShell, Bash/zsh, Win32 API</div>
+                    </div>
+                    <div>
+                        <div class="skill-category">Game Development</div>
+                        <div class="skill-list">Unity, Unreal Engine, Godot, Custom Engine Development</div>
+                    </div>
+                    <div>
+                        <div class="skill-category">Creative Software</div>
+                        <div class="skill-list">Adobe Suite, GIMP, Figma, Rhinoceros 3D, Grasshopper, Blender</div>
+                    </div>
+                    <div>
+                        <div class="skill-category">Systems & Networking</div>
+                        <div class="skill-list">Windows, macOS, Linux, TCP/IP, Cloud Platforms</div>
+                    </div>
+                    <div>
+                        <div class="skill-category">Hardware</div>
+                        <div class="skill-list">Synthesizer Repair, Basic Electronics, Microcontroller Experience</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Professional Experience</h2>
+                <div class="experience-item">
+                    <div class="experience-title">Fachleitung für UX/UI & Backend-Entwickler</div>
+                    <div class="experience-date">Wuppertaler Institut für bildungsökonomische Forschung | 12.2023 - Present</div>
+                    <ul>
+                        <li class="numbered" data-number="1">Develop visual concepts and data visualizations to improve research accessibility</li>
+                        <li class="numbered" data-number="2">Implement backend systems and manage server infrastructure</li>
+                        <li class="numbered" data-number="3">Collaborate with cross-functional teams to solve complex technical challenges</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-title">System Administrator</div>
+                    <div class="experience-date">SBIT-Hospitality/Gelicom | 09.2022 - 02.2023</div>
+                    <ul>
+                        <li class="numbered" data-number="1">Planned and implemented domain and network solutions for hospitality sector</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-title">Network Technician</div>
+                    <div class="experience-date">Self-employed | 02.2010 - 11.2016</div>
+                    <ul>
+                        <li class="numbered" data-number="1">Designed and installed network and TCP/IP solutions</li>
+                        <li class="numbered" data-number="2">Provided technical consulting for clients' customized network needs</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Creative & Technical Projects</h2>
+                <div class="experience-item">
+                    <div class="experience-title">Game Engine</div>
+                    <div class="experience-date">Personal Project</div>
+                    <p>On going Game/Engine project in C with careful seperation of platform and software layer.
+                    </p>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-title">Unreal Engine & Android Gyroscope System</div>
+                    <div class="experience-date">Personal Project</div>
+                    <p>Created a system for Unreal Engine that uses gyroscope data from Android devices as input over socket connections. The system allows tilting and moving a phone to control the orientation of a virtual room relative to gravity.</p>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-title">Godot Engine 2D Raytracer</div>
+                    <div class="experience-date">Open Source Project</div>
+                    <p>Wrote a 2D raytracer for Godot Engine with support for sampling off textures and normal mapping, the only implementation of its kind for this engine.</p>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-title">Kinect-Controlled Audio Project</div>
+                    <div class="experience-date">Interactive Installation</div>
+                    <p>Used TouchDesigner to parse Kinect IR data to control Ableton Live, creating an interactive audio experience responsive to movement.</p>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-title">Nyomda Kollektiv</div>
+                    <div class="experience-date">2023 - Present</div>
+                    <p>Founding member of a micro-publisher for artist editions, zines, and comics. Collaborate with BAG e.V. Wuppertal to provide art and illustration educational opportunities for youth.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Education</h2>
+                <div class="experience-item">
+                    <div class="experience-title">Bachelor in Art (Double Major)</div>
+                    <div class="experience-date">Bergische Universität Wuppertal | 2022 - Present</div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-title">Computer Science Studies</div>
+                    <div class="experience-date">Bergische Universität Wuppertal | 2021 - 2022</div>
+                    <p>Focus on 3D computer graphics as member of the Department of Mathematics and Computer Science</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
